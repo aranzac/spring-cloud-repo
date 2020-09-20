@@ -1,19 +1,9 @@
-spring:
-  application:
-    name: pruebaservice
-  cloud:
-    config:
-      uri: http://localhost:8888
-      username: root
-      password: s3cr3t
-      
-      
-server:
+  server:
   port: 8081
   
 eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
-    service-url:
+    serviceUrl:
       defaultZone: http://admin:s3cr3t@localhost:8761/eureka/
