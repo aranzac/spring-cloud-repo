@@ -33,4 +33,4 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://admin:s3cr3t@eureka:8761/eureka/
+      defaultZone: http://admin:s3cr3t@eurekaservice:8761/eureka/
