@@ -4,4 +4,4 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://admin:s3cr3t@eurekaservice:8761/eureka/
+      defaultZone: http://admin:s3cr3t@localhost:8761/
