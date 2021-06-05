@@ -20,4 +20,4 @@ eureka:
       enableSelfPreservation: false
       waitTimeInMsWhenSyncEmpty: 0
     serviceUrl:
-      defaultZone: http://admin:s3cr3t@eurekaservice:8761/  
+      defaultZone: http://admin:s3cr3t@localhost:8761/  
