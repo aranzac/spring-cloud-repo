@@ -18,3 +18,17 @@ eureka:
     server:
       enableSelfPreservation: false
       waitTimeInMsWhenSyncEmpty: 0
+
+  # instance:
+  #   # Necessary for Docker as it doesn't have DNS entries
+  #   preferIpAddress: true
+  #   # Necessary for Docker otherwise you will get 172.0.0.x IP
+  #   ipAddress: ${HOST}
+
+  instance:
+    preferIpAddress: true
+    ipAddress: 172.16.12.155
+
+  client:
+    serviceUrl:
+      defaultZone: http://admin:s3cr3t@172.16.12.155:8761/eureka/
