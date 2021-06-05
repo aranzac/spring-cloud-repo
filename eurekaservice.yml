@@ -11,16 +11,14 @@ server:
 
 eureka:
   client:
-    instance:
-      preferIpAddress: true
-      ipAddress: 172.16.12.155
+    # instance:
+    #   preferIpAddress: true
+    #   ipAddress: 172.16.12.155
     registerWithEureka: false
     fetchRegistry: false
-    # service-url:
-    #   defaultZone: http://admin:s3cr3t@localhost:8761/eureka/
     server:
       enableSelfPreservation: false
       waitTimeInMsWhenSyncEmpty: 0
     serviceUrl:
-      defaultZone: http://admin:s3cr3t@172.16.12.155:8761/eureka/
+      defaultZone: http://admin:s3cr3t@eureka:8761/eureka/
   
